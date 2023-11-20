@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bitter:ital,wght@0,500;1,500&family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Cormorant+SC:wght@300&family=Dancing+Script&family=Lora&family=Uchen&family=Vollkorn:ital@1&display=swap"
+    rel="stylesheet">
+  <style type="text/css">
+    .background {
+      background-color: white;
+      font-family: "Barlow";
+    }
+
+
+    .first {
+      background-color: white;
+      width: 100%;
+      height: auto;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px
+    }
+
+
+    .nav {
+      background-color: #2d292a;
+      height: 50px;
+      width: 100%;
+      margin: 10px 0px 10px 0px;
+    }
+
+    .nav2 {
+      padding: 14px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav2:hover {
+      background-color: #a57b1b;
+    }
+
+
+
+    /*picture*/
+
+    .slider {
+      width: 100%;
+      height: 600px;
+      background-color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .image-container {
+      width: 8000px;
+      background-color: white;
+      height: 300px;
+      clear: both;
+      position: relative;
+      -webkit-transition: left 2s;
+      -moz-transition: left 2s;
+      -o-transition: left 2s;
+      transition: left 2s;
+    }
+
+    .slide {
+      float: left;
+
+      position: relative;
+    }
+
+    #slide-1:target~.image-container {
+      left: 0px;
+    }
+
+    #slide-2:target~.image-container {
+      left: -500px;
+    }
+
+    #slide-3:target~.image-container {
+      left: -1000px;
+    }
+
+    #slide-4:target~.image-container {
+      left: -1500px;
+    }
+
+    #slide-5:target~.image-container {
+      left: -2000px;
+    }
+
+    #slide-6:target~.image-container {
+      left: -2500px;
+    }
+
+    #slide-7:target~.image-container {
+      left: -3000px;
+    }
+
+    #slide-8:target~.image-container {
+      left: -3500px;
+    }
+
+
+
+
+
+
+    .buttons {
+      position: relative;
+      top: -20px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      height: 3.5px;
+      width: 20px;
+
+      background-color: white;
+    }
+
+
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 70px;
+      color: white;
+    }
+
+
+
+
+
+
+    .textbox {
+      height: 200px;
+      margin: 80px 0px 80px 0px;
+      border-spacing: 2px
+    }
+
+    .boxtext {
+      text-align: center;
+      float: left;
+      width: 30%;
+      font-family: Lora;
+    }
+
+
+    .img1 {
+      float: left;
+      ;
+      text-align: center;
+      height: 400px;
+      width: 600px;
+      margin: 0px 5px 20px 25px;
+    }
+
+    .img2 {
+      float: right;
+      text-align: center;
+      height: 400px;
+      width: 600px;
+      margin: 90px 5px 20px 25px;
+    }
+
+
+    .img3 {
+      float: left;
+      ;
+      text-align: center;
+      height: 400px;
+      width: 600px;
+      margin: 90px 5px 0px 25px;
+    }
+
+
+    .p1 {
+      text-align: center;
+      float: right;
+      width: 37.8%;
+      height: 190px;
+      padding: 50px;
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-family: Lora;
+    }
+
+    .p2 {
+      text-align: center;
+      float: left;
+      width: 37.8%;
+      height: 190px;
+      padding: 50px;
+      font-size: 20px;
+      font-family: Lora;
+    }
+
+    .p3 {
+      float: right;
+      width: 37.8%;
+      height: 190px;
+      padding: 50px;
+      font-size: 20px;
+      list-style-type: disc;
+      font-family: Lora;
+    }
+
+    .heading1 {
+      font-size: 30px;
+      text-align: center;
+      margin-top: 20px;
+      margin-right: 140px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      float: right;
+      font-size: 30px;
+    }
+
+    .heading2 {
+      font-size: 30px;
+      text-align: center;
+      margin-top: 70px;
+      margin-right: 310px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      float: right;
+      font-size: 30px;
+    }
+
+    .heading3 {
+      font-size: 30px;
+      text-align: center;
+      margin-top: 70px;
+      margin-right: 160px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      float: right;
+      font-size: 30px;
+    }
+
+
+    .findout {
+      color: black;
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .findout:hover {
+      color: none;
+      background-color: none;
+    }
+
+
+
+
+
+
+    /*footer*/
+    .top {
+      width: 100%;
+      text-align: center;
+      background-color: #2d292a;
+    }
+
+    table {
+      text-align: center;
+      font-size: 17px;
+      background-color: #2d292a;
+      width: 100%;
+      color: white;
+    }
+
+    .center-footer {
+      width: 100%;
+      text-align: center;
+      display: inline;
+
+
+    }
+
+    .icon {
+      display: inline;
+    }
+
+    .icon2 {
+      display: inline;
+    }
+
+    .icon:hover {
+      color: #a57b1b;
+      text-decoration: underline;
+    }
+
+    .icon2:hover {
+      color: #a57b1b;
+      text-decoration: underline;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      color: white;
+    }
+
+    ul li {
+      list-style: none;
+
+    }
+
+    .social1 {
+      display: inline;
+    }
+
+    .social1:hover {}
+
+    h4 {
+      font-size: 28px;
+    }
+
+    ul a:hover {
+      color: #a57b1b;
+
+    }
+    }
+  </style>
+
+
+</head>
+
+<body class="background">
+
+  <!...nav...>
+
+    <div class="first"> <img src="./pictures\logo.jpeg" class="center"> </div>
+
+    <div class="nav">
+
+      <a href="index.html" class="nav2" style="float: left;"> Home </a>
+      <a href="arceliaacomodation.html" class="nav2" style="float: left;"> Accomadation </a>
+      <a href="arceliaservices.html" class="nav2" style="float: left;"> Services </a>
+      <a href="arcelianews.html" class="nav2" style="float: left;"> News </a>
+      <a href="arceliagallery.html" class="nav2" style="float: right;"> Gallery </a>
+      <a href="booking.html" class="nav2" style="float: right;"> Booking</a>
+    </div>
+
+
+    <!...picture....>
+      <div style=" width: 100%; float: left; ">
+        <div class="slider">
+          <span id="slide-1"></span>
+          <span id="slide-2"></span>
+          <span id="slide-3"></span>
+          <span id="slide-4"></span>
+          <span id="slide-5"></span>
+          <span id="slide-6"></span>
+          <span id="slide-7"></span>
+          <span id="slide-8"></span>
+
+
+          <div class="image-container">
+            <img src="./pictures/slidewhow3.jpg" class="slide" width="700px" height="600" />
+            <img src="./pictures\slidesow1.jpg" class="slide" width="700" height="600" />
+            <img src="./pictures\slideshow2.jpg" class="slide" width="700" height="600" />
+            <img src="./pictures\slideshow4.jpg" class="slide" width="700" height="600" />
+            <img src="./pictures\slideshow5.jpg" class="slide" width="700" height="600" />
+            <img src="./pictures\slideshow6.jpg" class="slide" width="700" height="600" />
+            <img src="./pictures\slideshow7.jpg" class="slide" width="700" height="600" />
+            <img src="./pictures\slideshow8.jpg" class="slide" width="700" height="600" />
+
+
+          </div>
+
+
+          <div class="buttons">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+            <a href="#slide-5"></a>
+            <a href="#slide-6"></a>
+            <a href="#slide-7"></a>
+            <a href="#slide-8"></a>
+
+
+          </div>
+        </div>
+        <div class="text">
+          <p style="margin-bottom: 0px" ;>
+          <pre style="font-family: bitter"> Arcelia Hotel  
+       <span style="font-size: 40px; margin-top: 0px;font-family:bitter;"><i>alter of the sky</i> </span></pre>
+          </p>
+        </div>
+      </div>
+
+      </div>
+      </div>
+      </div>
+
+
+
+
+
+
+      <div align="center" style="color: #a57b1b; margin-top: 800px; margin-bottom: 20px ">
+        <i class="fa-solid fa-moon fa-sm" style="margin-left: 7px" ;></i>
+        <i class="fa-solid fa-moon fa-sm" style=" margin-left: 7px;"></i>
+        <i class="fa-solid fa-moon fa-lg" style="margin-left: 7px;"></i>
+        <i class="fa-solid fa-moon fa-sm" style="margin-left: 7px;" ;></i>
+        <i class="fa-solid fa-moon fa-sm" style="margin-left: 7px" ;></i>
+      </div>
+
+
+
+
+
+      <div class="textbox">
+        <h3 align="center" style="font-size: 30px; font-family: ; color:#a57b1b ">MAGIC & MAJESTY</h3>
+        <p class="boxtext" style="margin: 0px 20px 0px 240px;">Set down your suitcases in the splendid décor of the
+          Arcelia Hotel's lobby. Be overcome with a sensation of well-being. The Indian Sea embraces the terraces of the
+          rooms. Share delightful family moments and let the children experience their own adventures.</p>
+
+        <p class="boxtext" style="margin: 0px 240px 0px 20px;"> Enjoy sport and lazing on the private beach, as well as
+          the Projection room, the <b>Flames Resteraunt</b> and the<b> Citrus Bar</b> before relaxing at the <b>Spa</b>
+          Diane Barrière. Inject some magic into your evenings and experience a star-studded stay.</p>
+      </div>
+
+
+
+      <h1 align="center" style="font-size: 50px" style="margin-bottom: 40px;"><b><i>What We Offer</i></b></h1>
+
+
+      <div><img src="./pictures\room.jpeg" class="img1"></div>
+      <div>
+        <h2 class="heading1"><b>ACCOMMODATION</b> </h2>
+        <p class="p1">The Prestige Sea View Suite provide you with a private enclave encompassing an impressive 196.58
+          square meters of space. This impressive guest accommodation offers you the epitome of personalized service,
+          and the fully furnished open air terrace is perfectly situated to provide breathtakingly beautiful</p>
+      </div>
+
+
+
+      <div><img src="./pictures\dine1.webp" class="img2"></div>
+      <div>
+        <h3 class="heading2"><b>DINING</b></h3>
+        <p class="p2">Explore the exotic flavours of Thai, Indonesian, Japanese and Chinese specialties at Flames,
+          located on the lobby level in the new wing of the Hotel. Bringing together cuisines from Southeast Asia, the
+          live station and picturesque views make Flames an unforgettable dining experience.</p>
+      </div>
+
+
+      <div><img src="./pictures\swimingpool.jpg" class="img3"></div>
+      <div>
+        <h3 class="heading3"><b>SERVICES</b></h3>
+        <ol class="p3">
+          <li>Swimming Pool</li>
+          <li>Spa </li>
+          <li>Theatre</li>
+          <li>Event Management</li>
+          <li>Breakfast Buffet</li>
+          <li>Conference Rooms</li>
+          <li>Vallet Parking</li>
+          <li>Gymnasium</li>
+          <li>Cafe and Resteraunts</li>
+        </ol>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <h1 style="text-align: center; margin:100% 0px 0px 0px; "> Our Sustainable Development Approach</h1><br>
+      <p style="font-size: 20px;text-align: center;width: 60%;margin-left: 260px;">Welcome to Arcelia, where luxury
+        seamlessly blends with sustainability, offering you an eco-friendly haven that harmonizes with nature. Nestled
+        in Santosa Island, our hotel is a proud advocate for responsible hospitality, providing a unique and
+        conscientious travel experience. Choose our hotel for an unforgettable stay that transcends traditional luxury.
+        Immerse yourself in a sustainable oasis where every detail reflects our dedication to preserving the planet.
+        Book your eco-friendly escape today and join us in redefining the future of responsible travel.</p>
+
+
+      <a href="eco.html" class="findout"> Find Out More <i class="fa-solid fa-arrow-right"
+          style="color:#a57b1b;"></i> </a>
+
+
+      <br>
+      <br>
+
+      <div align="center" style="color: #a57b1b; margin-top: 100px; margin-bottom: 80px ">
+        <i class="fa-solid fa-moon fa-sm" style="margin-left: 7px" ;></i>
+        <i class="fa-solid fa-moon fa-sm" style=" margin-left: 7px;"></i>
+        <i class="fa-solid fa-moon fa-lg" style="margin-left: 7px;"></i>
+        <i class="fa-solid fa-moon fa-sm" style="margin-left: 7px;" ;></i>
+        <i class="fa-solid fa-moon fa-sm" style="margin-left: 7px" ;></i>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!....footer....>
+        <div style="width: 100%; object-fit: cover;">
+          <table class="top">
+            <tr>
+              <td colspan="2"><img src="./pictures\logo1.jpeg" class="logo-ig"
+                  style="border-radius:10px; width:230px; height: 80px; "> </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td style="width: 38%;">
+                <h4 style="font-size:26px;">Contact Details</h4>
+
+                <p> Arcelia Hotel,<br> Santosa Island, <br> Southern Coast of the main Island,<br> 098267, Singapore.
+                </p>
+                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                  <p class="icon">+65 41627673</p>
+                </div> <br>
+                <div class="icon2"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  <p class="icon">arceliahotels@gmail.com</p>
+                </div>
+              </td>
+              <td style="width: 38%;">
+                <div
+                  style="width: 40%; display: block;  float: left; font-size: 23px; margin-top: 8px; margin-left: 70px;">
+
+                  <h4>Arcelia Hotel</h4>
+
+                  <ul>
+                    <a href="Arceliaaboutus.html">
+                      <li style="margin-bottom: 6px;">About Us</li>
+                    </a>
+
+                    <a href="booking.html">
+                      <li style="margin-bottom: 6px;">Booking</li>
+                    </a>
+                    <a href="arceliaservices.html">
+                      <li style="margin-bottom: 6px;">Services</li>
+                    </a>
+                    <a href="arcelianews.html">
+                      <li>News</li>
+                    </a>
+
+                  </ul>
+
+
+                </div>
+              </td>
+              <td style="width: 32%; ">
+                <h4 style="font-size:23px;">Subscribe To Our Newsletter</h4>
+                <div class="box">
+                  <span> <input type="sign in" name="Email Address" placeholder="Email Address"
+                      style="border: none;  font-size: 14px; background-color: none;"> <i class="fa fa-long-arrow-right"
+                      aria-hidden="true"> </i> </span>
+                </div>
+                <div>
+                  <h4 style="font-size:26px;">Follow Us On:</h4>
+                  <div class="social1">
+
+                    <a href="https://www.facebook.com/profile.php?id=61553105553908" class="social1"> <i
+                        class="fa-brands fa-facebook-f fa-2xl" style="color: #a57b1b; margin-right: 14px;"></i> </a>
+                    <a href="https://www.instagram.com/arceliahotels/" class="social1"> <i
+                        class="fa-brands fa-instagram fa-2xl" style="color: #a57b1b;   margin-right: 14px;"></i></a>
+                    <a href="https://www.linkedin.com/in/arcelia-hotel-31522a29a/" class="social1"> <i
+                        class="fa-brands fa-linkedin-in fa-2xl" style="color: #a57b1b;"></i>
+                  </div>
+              </td>
+            </tr></a>
+          </table>
+        </div>
+        </footer>
+        <nav style="padding: 30px; background-color:#a57b1b;"></nav>
+</body>
+
+
+
+
+</body>
+
+</html>

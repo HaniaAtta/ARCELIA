@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bitter:ital,wght@0,500;1,500&family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Cormorant+SC:wght@300&family=Dancing+Script&family=Lora&family=Uchen&family=Vollkorn:ital@1&display=swap"
+    rel="stylesheet">
+  <style type="text/css">
+    /*nav*/
+    .background {
+      background-color: #ffffff;
+      font-family: "Barlow";
+      -webkit-text-size-adjust: 100%;
+    }
+
+
+    .first {
+      background-color: white;
+      width: 100%;
+      height: auto;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px
+    }
+
+
+    .nav1 {
+      background-color: #2d292a;
+      height: 50px;
+      width: 100%;
+      margin: 10px 0px 10px 0px;
+    }
+
+    .nav4 {
+      padding: 14px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav4:hover {
+      background-color: #a57b1b;
+      cursor: hand;
+    }
+
+    /*services*/
+    .left {
+      position: absolute;
+      top: 49.5%;
+      left: 14.3%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      color: black;
+
+    }
+
+    .service {
+      position: relative;
+      text-align: center;
+      color: white;
+      margin-bottom: 80px;
+    }
+
+    .offer {
+      padding-left: 25px;
+      padding-right: 15px;
+      position: relative;
+      min.height: 1px;
+      width: 40%;
+      float: left;
+      margin-left: 45px;
+      margin-bottom: 23px;
+    }
+
+    .offerings-ig {
+      display: block;
+      position: relative;
+      box-sizing: border-box;
+
+
+    }
+
+    .offerings-ig:hover {
+      opacity: 0.7;
+    }
+
+    .offer-text-center {
+      text-align: center !important;
+      display: block;
+      position: relative;
+    }
+
+    .offer_heading {
+      margin-top: 48px;
+      font-size: 23px;
+    }
+
+    .offer_text {
+      margin-top: 25px;
+      font-size: 20px;
+    }
+
+    h3 {
+      margin-top: 16px;
+      margin-bottom: 8px;
+
+    }
+
+    p {
+      margin-bottom: 8px;
+    }
+
+    /*slider*/
+    .slide-text {
+      font-size: 23px;
+    }
+
+    .slide-text1 {
+      font-size: 20px;
+    }
+
+    .slider {
+      width: 500px;
+      height: 350px;
+      background-color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .image-container {
+      width: 1600px;
+
+      height: 300px;
+      clear: both;
+      position: relative;
+      -webkit-transition: left 2s;
+      -moz-transition: left 2s;
+      -o-transition: left 2s;
+      transition: left 2s;
+    }
+
+    .slide {
+      float: left;
+
+      position: relative;
+    }
+
+    #slide-1:target~.image-container {
+      left: 0px;
+    }
+
+    #slide-2:target~.image-container {
+      left: -500px;
+    }
+
+    #slide-3:target~.image-container {
+      left: -1000px;
+    }
+
+    .buttons {
+      position: relative;
+      top: -20px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      border-radius: 50px;
+      background-color: #2d292a;
+    }
+
+    /*valet*/
+    .slider1 {
+      width: 600px;
+
+      height: 350px;
+      background-color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .image-container1 {
+      width: 1500px;
+
+      height: 300px;
+      clear: both;
+      position: relative;
+      -webkit-transition: left 2s;
+      -moz-transition: left 2s;
+      -o-transition: left 2s;
+      transition: left 2s;
+    }
+
+    .slide1 {
+      float: left;
+
+      position: relative;
+    }
+
+    #slide-4:target~.image-container1 {
+      left: 0px;
+    }
+
+    #slide-5:target~.image-container1 {
+      left: -500px;
+    }
+
+    #slide-6:target~.image-container1 {
+      left: -1000px;
+    }
+
+    .buttons1 {
+      position: relative;
+      top: -20px;
+    }
+
+    .buttons1 a {
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      border-radius: 50px;
+      background-color: #2d292a;
+    }
+
+    /*dropdown*/
+    .dropbtn {
+      background-color: #2d292a;
+      color: white;
+      padding: 18px;
+      font-size: 16px;
+      border: none;
+
+
+      cursor: pointer;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 50px;
+      margin-left: 550px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+
+      background-color: #2d292a;
+
+      min-width: 60px;
+      box-shadow: 0px 8px 16px 0px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #a57b1b;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #2d292a;
+    }
+
+    /*footer*/
+    .top {
+      width: 100%;
+      text-align: center;
+      background-color: #2d292a;
+    }
+
+    table {
+      text-align: center;
+      font-size: 17px;
+      background-color: #2d292a;
+      width: 100%;
+      color: white;
+    }
+
+    .center-footer {
+      width: 100%;
+      text-align: center;
+      display: inline;
+
+
+    }
+
+    .icon {
+      display: inline;
+    }
+
+    .icon2 {
+      display: inline;
+    }
+
+    .icon:hover {
+      color: #a57b1b;
+      text-decoration: underline;
+    }
+
+    .icon2:hover {
+      color: #a57b1b;
+      text-decoration: underline;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      color: white;
+    }
+
+    ul li {
+      list-style: none;
+
+    }
+
+    .social {
+      display: inline;
+    }
+
+    .social:hover {
+      color: #a57b1b;
+    }
+
+    h4 {
+      font-size: 28px;
+    }
+
+    ul a:hover {
+      color: #a57b1b;
+      ;
+    }
+  </style>
+
+</head>
+
+<body style="background-color: #feffff;  ">
+  <!...nav...>
+    <div class="first"> <img src="./pictures\logo.jpeg" class="center"> </div>
+
+    <div class="nav1">
+
+      <a href="index.html" class="nav4" style="float: left; font-family:barlow;"> Home </a>
+      <a href="arceliaacomodation.html" class="nav4" style="float: left;font-family:barlow;"> Accomadation </a>
+      <a href="arceliaservices.html" class="nav4" style="float: left;font-family:barlow;"> Services </a>
+      <a href="arcelianews.html" class="nav4" style="float: left;font-family:barlow;"> News </a>
+      <a href="arceliagallery.html" class="nav4" style="float: right;font-family:barlow;"> Gallery </a>
+      <a href="booking.html" class="nav4" style="float: right;font-family:barlow;"> Booking</a>
+    </div>
+    <!....servicepage....>
+      <div class="service">
+        <div style="width:100%; height: 700px;">
+          <img style="width:100%; height: 100%;" src="./pictures\serviceh.jpg">
+        </div>
+
+        <div class="left" style="height: 700px;">
+          <div style="background-color: #cdac89; opacity: 0.6; height: 100%;">
+            <h1
+              style="font-family: lora; display:table-cell; text-align: center; vertical-align: middle;padding-left: 53px; padding-right: 20px; padding-top:272px">
+              Services</h1>
+          </div>
+        </div>
+      </div>
+      <div>
+
+
+      </div>
+
+      <!......Services>
+        <div>
+          <div class="dropdown">
+            <button class="dropbtn" style="font-size:18px; font-family: lora;">Select Your Services</button>
+            <div class="dropdown-content" style="font-size:18px; font-family: lora;">
+              <a href="arceliarestaurant.html">Restaurant</a>
+              <a href="arceliabreakfast.html">Breakfast</a>
+              <a href="arceliatheatre.html">Theatre</a>
+              <a href="spa.html">Spa</a>
+              <a href="#">Activity</a>
+              <a href="arceliaswimmingpool.html">Swimming</a>
+              <a href="arceliaevents.html">Event Mangement</a>
+              <a href="gym.html">Gym</a>
+              <a href="#slider">Lobby</a>
+              <a href="#slider">Valet Parking</a>
+            </div>
+          </div>
+        </div>
+        <!....s1>
+          <div class="offer">
+            <div class="offerings-ig"><a href="arceliarestaurant.html"> <img src="./pictures\r2.jpg" alt=""
+                  width="570px" height="360px"></a></div>
+            <div class="offer-text-center">
+              <div class="offer_heading">
+                <h3 style="font-size:26px; font-family: lora;">Restaurant</h3>
+              </div>
+              <div class="offer_text" style="text-align: justify;">
+                <p style="font-size:20px; font-family: barlow;"> Flames is an example of gracious dinning, outstanding
+                  service, extraordinary classic and contemporary cuisine. From family occasions to business dinners and
+                  moments of the heart, this is the place where unforgettable memories are made.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!....s2..>
+            <div class="offer">
+              <div class="offerings-ig"><a href="spa.html"><img src="./pictures\s2.jpg" alt="" width="570px"
+                    height="360px"></a></div>
+              <div class="offer-text-center">
+                <div class="offer_heading">
+                  <h3 style="font-size:26px; font-family: lora;">Spa</h3>
+                </div>
+                <div class="offer_text" style="text-align: justify;">
+                  <p style="font-size:20px; font-family: barlow;"> Welcome to our hotel's luxurious spa, where
+                    relaxation and rejuvenation await, where every detail is designed to enhance your well-being. At our
+                    hotel's spa, you can escape the stresses of everyday life. Step into a realm of pure bliss,
+                    personalized treatments and luxurious amenities await.</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!.....s3..>
+              <div class="offer">
+                <div class="offerings-ig"><a href="activities.html"><img src="./pictures\ac1.jpg" alt="" width="570px"
+                      height="360px"></a></div>
+                <div class="offer-text-center">
+                  <div class="offer_heading">
+                    <h3 style="font-size:26px; font-family: lora;">ACTIVITY</h3>
+                  </div>
+                  <div class="offer_text" style="text-align: justify;">
+                    <p style="font-size:20px; font-family: barlow;"> Arcelia is a favourite destination for those who
+                      seek a carefree break with the children. There’s so much to see and do-from falconry to horseback
+                      riding – making Arcelia perfect for families.</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <!...s4...>
+                <div class="offer">
+                  <div class="offerings-ig"><a href="gym.html"><img src="./pictures\g2.jpg" alt="" width="570px"
+                        height="360px"></a></div>
+                  <div class="offer-text-center">
+                    <div class="offer_heading">
+                      <h3 style="font-size:26px; font-family: lora;">Gym</h3>
+                    </div>
+                    <div class="offer_text" style="text-align: justify;">
+                      <p style="font-size:20px; font-family: barlow;"> Our hotel boasts a modern and well-equipped
+                        gymnasium, featuring a range of cardio machines, strength training equipment, and free
+                        weights.One can enjoy the convenience of a fully equipped gym right on the premises, eliminating
+                        the need to find an external fitness center.</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!.....s5...>
+                  <div class="offer">
+                    <div class="offerings-ig"><a href="arceliaevents.html"> <img src="./pictures\e2.jpg" alt=""
+                          width="570px" height="360px"></a></div>
+                    <div class="offer-text-center">
+                      <div class="offer_heading">
+                        <h3 style="font-size:26px; font-family: lora;">Event Management</h3>
+                      </div>
+                      <div class="offer_text" style="text-align: justify;">
+                        <p style="font-size:20px; font-family: barlow;">We work closely with clients to understand their
+                          event objectives, budget, and preferences, coordinate all logistical aspects, including room
+                          setup,catering and decorations for Birthday Parties and Weddings.</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <!.....s6...>
+                    <div class="offer">
+                      <div class="offerings-ig"><a href="arceliabreakfast.html"> <img src="./pictures\b2.jpg" alt=""
+                            width="570px" height="360px"></a></div>
+                      <div class="offer-text-center">
+                        <div class="offer_heading">
+                          <h3 style="font-size:26px; font-family: lora;">Breakfast Buffet</h3>
+                        </div>
+                        <div class="offer_text" style="text-align: justify;">
+                          <p style="font-size:20px; font-family: barlow;"> Our hotel offers a breakfast buffet with an
+                            extensive selection of dishes to cater to various tastes and dietary preferences. From
+                            freshly baked pastries to hot and cold breakfast items, there is something for everyone.</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!.....s7...>
+                      <div class="offer">
+                        <div class="offerings-ig"><a href="arceliaswimmingpool.html"><img src="./pictures\sp2.jpg"
+                              alt="" width="570px" height="360px"></a> </div>
+                        <div class="offer-text-center">
+                          <div class="offer_heading">
+                            <h3 style="font-size:26px;">Swimming</h3>
+                          </div>
+                          <div class="offer_text" style="text-align: justify;font-family: lora;">
+                            <p style="font-size:20px; font-family: barlow;"> Our hotel has a well-designed pool beyond
+                              just water with awesome lightning and expensive décor,Satisfying of your fitness goals
+                              along with a Stress-relieving atmosphere </p>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <!.....s8...>
+                        <div class="offer">
+                          <div class="offerings-ig"><a href="arceliatheatre.html"> <img src="./pictures\t2.jpg" alt=""
+                                width="570px" height="360px"> </a> </div>
+                          <div class="offer-text-center">
+                            <div class="offer_heading">
+                              <h3 style="font-size:26px;">Theatre</h3>
+                            </div>
+                            <div class="offer_text" style="text-align: justify; font-family: lora;">
+                              <p style="font-size:20px; font-family: barlow;"> Our hotel offers guests the convenience
+                                of enjoying live entertainment or movies without having to leave the hotel premises,
+                                featuring state-of-the-art audiovisual equipment, and comfortable seating arrangements.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        <!...slider...>
+                          <div style="display: inline;">
+                            <!...lobby....>
+                              <div style=" width: 40%; float: left;">
+                                <div class="slider" style="float: left;  margin-left: 90px;" id="slider">
+                                  <span id="slide-1"></span>
+                                  <span id="slide-2"></span>
+                                 <span id="slide-3"></span>
+                                  <div class="image-container">
+                                    <img src="./pictures\l4.jpg" class="slide" width="500" height="300" />
+                                    <img src="./pictures\l2.jpg" class="slide" width="500" height="300" />
+                                    <img src="./pictures\l7.jpg" class="slide" width="500" height="300" />
+                                  </div>
+                                  <div class="buttons">
+                                    <a href="#slide-1"></a>
+                                    <a href="#slide-2"></a>
+                                    <a href="#slide-3"></a>
+                                  </div>
+                                </div>
+                                <div style="width: 100%; margin-left: 50px;">
+                                  <div class="slide-text">
+                                    <h3 style="font-size:26px; text-align: center;font-family: lora; ">Lobby</h3>
+                                  </div>
+                                  <div class="slide-text1">
+                                    <p style="font-size:20px; font-family: barlow;"> The lobby houses the hotel's front
+                                      desk, where guests check-in and check-out,staffed by hotel personnel. It provides
+                                      comfortable seating arrangements for guests to relax, wait for their rooms, or
+                                      meet with others.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!....valet parking>
+                                <div style="float: left; width: 40%;">
+                                  <div class="slider1" style="float: left; margin-left: 180px;">
+                                    <span id="slide-4"></span>
+                                    <span id="slide-5"></span>
+                                    <span id="slide-6"></span>
+                                    <div class="image-container1">
+                                      <img src="./pictures\v2.jpg" class="slide1" width="500" height="300" />
+                                      <img src="./pictures\v7.jpg" class="slide1" width="500" height="300" />
+                                      <img src="./pictures\v5.jpg" class="slide1" width="500" height="300" />
+                                    </div>
+                                    <div class="buttons1">
+                                      <a href="#slide-4"></a>
+                                      <a href="#slide-5"></a>
+                                      <a href="#slide-6"></a>
+                                    </div>
+                                  </div>
+                                  <div style="width: 100%; margin-left: 180px;">
+                                    <div class="slide-text">
+                                      <h3 style="font-size:26px; text-align: center;font-family: lora;">Valet Parking
+                                      </h3>
+                                    </div>
+                                    <div>
+                                      <p class="slide-text1" style="font-size:20px; font-family: barlow;"> We ensure the
+                                        safety and security of guests' vehicles. Trained valet attendants handle the
+                                        parking process carefully, minimizing the risk of accidents or damage. We have
+                                        designated secured garage for vehicles.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+
+
+                          <div align="center" style="color: #a57b1b; margin-top: 223%;">
+                            <i class="fa-solid fa-moon fa-sm" style="margin-left: 7px;"></i>
+                            <i class="fa-solid fa-moon fa-sm" style=" margin-left: 7px;"></i>
+                            <i class="fa-solid fa-moon fa-lg" style="margin-left: 7px;"></i>
+                            <i class="fa-solid fa-moon fa-sm" style="margin-left: 7px;" ;></i>
+                            <i class="fa-solid fa-moon fa-sm" style="margin-left: 7px" ;></i>
+                          </div>
+                          <br>
+                          <br>
+
+                          <!....footer....>
+                            <div style="width: 100%; ">
+                              <table class="top">
+                                <tr>
+                                  <td colspan="2"><img src="./pictures\logo1.jpeg" class="logo-ig"
+                                      style="border-radius:10px; width:230px; height: 80px; "> </td>
+                                </tr>
+                              </table>
+                              <table>
+                                <tr>
+                                  <td style="width: 38%;">
+                                    <h4 style="font-size:26px;font-family:barlow;">Contact Details</h4>
+
+                                    <p style="font-family:barlow;"> Arcelia Hotel,<br> Santosa Island, <br> Southern
+                                      Coast of the main Island,<br> 098267, Singapore.</p>
+                                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                                      <p class="icon" style="font-family:barlow;">+65 41627673</p>
+                                    </div> <br>
+                                    <div class="icon2"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                      <p class="icon" style="font-family:barlow;">arceliahotels@gmail.com</p>
+                                    </div>
+                                  </td>
+                                  <td style="width: 38%;">
+                                    <div
+                                      style="width: 40%; display: block;  float: left; font-size: 23px; margin-top: 8px; margin-left: 70px;">
+
+                                      <h4 style="font-family:barlow;">Arcelia Hotel</h4>
+
+                                      <ul>
+                                        <a href="Arceliaaboutus.html">
+                                          <li style="margin-bottom: 6px;font-family:barlow;">About Us</li>
+                                        </a>
+
+                                        <a href="booking.html">
+                                          <li style="margin-bottom: 6px; font-family:barlow;">Booking</li>
+                                        </a>
+                                        <a href="arceliaservices.html">
+                                          <li style="margin-bottom: 6px;font-family:barlow;">Services</li>
+                                        </a>
+                                        <a href="arcelianews.html">
+                                          <li style="font-family:barlow;">News</li>
+                                        </a>
+
+                                      </ul>
+
+
+                                    </div>
+                                  </td>
+                                  <td style="width: 32%; ">
+                                    <h4 style="font-size:23px;font-family:barlow;">Subscribe To Our Newsletter</h4>
+                                    <div class="box">
+                                      <span> <input type="sign in" name="Email Address" placeholder="Email Address"
+                                          style="border: none;  font-size: 14px; background-color: none;"> <i
+                                          class="fa fa-long-arrow-right" aria-hidden="true"> </i> </span>
+                                    </div>
+                                    <div>
+                                      <h4 style="font-size:26px; font-family:barlow;">Follow Us On:</h4>
+                                      <div class="social">
+
+                                        <a href="https://www.facebook.com/profile.php?id=61553105553908" class="social">
+                                          <i class="fa-brands fa-facebook-f fa-2xl"
+                                            style="color: #a57b1b; margin-right: 14px;"></i> </a>
+                                        <a href="https://www.instagram.com/arceliahotels/" class="social"> <i
+                                            class="fa-brands fa-instagram fa-2xl"
+                                            style="color: #a57b1b;   margin-right: 14px;"></i></a>
+                                        <a href="https://www.linkedin.com/in/arcelia-hotel-31522a29a/" class="social">
+                                          <i class="fa-brands fa-linkedin-in fa-2xl" style="color: #a57b1b;"></i>
+                                      </div>
+                                  </td>
+                                </tr></a>
+                              </table>
+                            </div>
+                            </footer>
+                            <nav style="padding: 30px; background-color:#a57b1b;"></nav>
+</body>
+
+</html>
